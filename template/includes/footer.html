@@ -1,0 +1,13 @@
+<footer class="footer js-footer">
+    <div class="footer__inner -exp-3 -wrap -bg--dark">
+      <div class="footer__content footer__grid grid grid--gutters grid--full grid--fit-sm grid--top">
+        <div class="footer__cell grid__cell">
+          {% if site.email%}<p><a href="mailto:{{site.email}}">{{site.email}}</a></p>{% endif %}
+          {% if site.phone%}<p><a href="tel:{{site.phone}}">{{site.phone}}</a></p>{% endif %}
+        </div>
+        <div class="footer__cell grid__cell">
+          {% if site.description%}<p>{{site.description}}</p>{% endif %}
+        </div>
+      </div>
+    </div>
+  </footer>

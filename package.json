@@ -1,0 +1,54 @@
+{
+  "name": "jekyll-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate project for jekyll site with webpack integration.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is one last'",
+    "build": "run-s webpack jekyll",
+    "dev": "run-s webpack:dev jekyll:dev",
+    "jekyll": "bundle exec jekyll build",
+    "jekyll:dev": "JEKYLL_ENV=development bundle exec jekyll build",
+    "jekyll:serve": "JEKYLL_ENV=development bundle exec jekyll serve",
+    "browsersync": "browser-sync start --proxy 'localhost:4000' --files 'public'",
+    "start": " run-p server webpack:dev:watch",
+    "server": "run-p jekyll:serve browsersync",
+    "webpack": "NODE_ENV=production webpack",
+    "webpack:dev": "NODE_ENV=development webpack",
+    "webpack:dev:watch": "NODE_ENV=development webpack --watch"
+  },
+  "authors": [
+    {
+      "name": "Mario Perez",
+      "email": "hello@thismarioperez.com"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babili-webpack-plugin": "^0.1.2",
+    "browser-sync": "^2.18.5",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.9.0",
+    "eslint-config-squarespace": "^1.0.1",
+    "eslint-loader": "^2.1.0",
+    "expose-loader": "^0.7.5",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "npm-run-all": "^4.1.3",
+    "postcss-loader": "^2.0.8",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.19.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "properjs-hobo": "^0.3.21"
+  }
+}
