@@ -1,1 +1,3 @@
-console.log("Hello, world!")
+require( '../sass/app.scss' );
+
+console.log( 'Hello, world!' );

@@ -5,9 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is one last'",
-    "build": "run-s webpack jekyll",
-    "dev": "run-s webpack:dev jekyll:dev",
+    "postinstall": "bundle install && cd ./node_modules/properjs-hobo && npm install && npm run build -- 'append remove is one last'",
+    "build": "bundle install && run-s jekyll webpack",
+    "dev": "bundle install && run-s jekyll:dev webpack:dev",
     "jekyll": "bundle exec jekyll build",
     "jekyll:dev": "JEKYLL_ENV=development bundle exec jekyll build",
     "jekyll:serve": "JEKYLL_ENV=development bundle exec jekyll serve",

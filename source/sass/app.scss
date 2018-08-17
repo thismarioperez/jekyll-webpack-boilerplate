@@ -1,8 +1,17 @@
-$color: black;
+$black: black;
 
 .site-logo {
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
   color: $black;
+}
+
+a {
+  &,
+  &:visited {
+    color: inherit;
+  }
+
+  text-decoration: none;
 }

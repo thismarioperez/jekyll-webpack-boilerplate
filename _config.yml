@@ -37,8 +37,8 @@ plugins:
 ################################################################################
 # jekyll-favicon config
 favicon:
-  source: /template/favicon.svg
-  path: /public/assets/img/favicon
+  source: favicon.svg
+  path: /assets/img/favicon
 
 ################################################################################
 # File Managing
