@@ -3,8 +3,8 @@
 ################################################################################
 .jekyll-metadata
 public
-site/assets/js/app.js
-site/assets/css/app.css
+assets/js/app.js
+assets/css/app.css
 
 ################################################################################
 ## Node

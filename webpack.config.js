@@ -51,7 +51,7 @@ module.exports = {
   },
 
   output: {
-    path: path.resolve( __dirname, 'site', 'assets', 'js' ),
+    path: path.resolve( __dirname, 'assets', 'js' ),
     filename: '[name].js',
   },
 

@@ -27,7 +27,6 @@ github_username:  jekyll
 
 # Build settings
 destination: public
-source: site
 markdown: kramdown
 plugins:
   - jekyll-feed
